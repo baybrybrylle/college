@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX Form Validation with Submissions Table</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>AJAX Form Validation Example</h2>
+
+  <form id="myForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <span id="nameError" style="color:red;"></span><br>
+
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email"><br>
+    <span id="emailError" style="color:red;"></span><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br>
+    <span id="passwordError" style="color:red;"></span><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <div id="successMessage" style="color:green;"></div>
+
+  <h3>Form Submissions</h3>
+  <table border="1" style="width: 100%;">
+    <thead>
+      <tr>
+        <th>Valid Submissions</th>
+        <th>Invalid Submissions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="validSubmissions"></td>
+        <td id="invalidSubmissions"></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <script src="script.js"></script>
+</body>
+</html>
